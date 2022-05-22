@@ -61,13 +61,33 @@ export default {
       items: [
         {
           icon: 'mdi-apps',
-          title: 'Welcome',
+          title: 'Inicio',
           to: '/'
         },
         {
           icon: 'mdi-chart-bubble',
-          title: 'Inspire',
-          to: '/inspire'
+          title: 'Quienes Somos',
+          to: '/about'
+        },
+        {
+          icon: 'mdi-apps',
+          title: 'Directorio de Huertas',
+          to: '/huertas'
+        },
+        {
+          icon: 'mdi-chart-bubble',
+          title: 'Perfil',
+          to: '/perfil'
+        },
+        {
+          icon: 'mdi-apps',
+          title: 'Calendario de eventos',
+          to: '/anuncios'
+        },
+        {
+          icon: 'mdi-chart-bubble',
+          title: 'Enlaces de interes',
+          to: '/interes'
         }
       ],
       miniVariant: false,
