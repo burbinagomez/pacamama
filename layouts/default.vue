@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar
+    <v-app-bar class="primary"
       :clipped-right="true"
       fixed
       app
@@ -42,10 +42,29 @@
       </v-list>
     </v-navigation-drawer>
     <v-footer
-      :absolute="!fixed"
-      app
+    class="primary"
+      padless
     >
-      <span>&copy; {{ new Date().getFullYear() }}</span>
+    <v-container>
+      <v-card
+        flat
+        tile
+        class="primary white--text text-center"
+      >
+        <v-card-text>
+          <v-btn
+            v-for="icon in icons"
+            :key="icon"
+            class="mx-4 black--text"
+            icon
+          >
+            <v-icon size="24px">
+              {{ icon }}
+            </v-icon>
+          </v-btn>
+        </v-card-text>
+      </v-card>
+      </v-container>
     </v-footer>
   </v-app>
 </template>
@@ -55,6 +74,12 @@ export default {
   name: 'DefaultLayout',
   data () {
     return {
+      icons: [
+        'mdi-facebook',
+        'mdi-twitter',
+        'mdi-email',
+        'mdi-instagram',
+      ],
       clipped: false,
       drawer: false,
       fixed: false,

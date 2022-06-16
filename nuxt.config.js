@@ -40,6 +40,7 @@ export default {
         '@nuxtjs/axios',
         // https://go.nuxtjs.dev/pwa
         '@nuxtjs/pwa',
+        '@nuxtjs/strapi',
     ],
 
     // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -69,9 +70,21 @@ export default {
                     warning: colors.amber.base,
                     error: colors.deepOrange.accent4,
                     success: colors.green.accent3
+                },
+                light: {
+                    primary: "#ACF2AE",
+                    accent: colors.grey.darken3,
+                    secondary: "#F7BC03",
+                    info: colors.teal.lighten1,
+                    warning: colors.amber.base,
+                    error: colors.deepOrange.accent4,
+                    success: colors.green.accent3
                 }
             }
         }
+    },
+    strapi: {
+        url: 'https://mysterious-falls-23589.herokuapp.com/'
     },
 
     // Build Configuration: https://go.nuxtjs.dev/config-build

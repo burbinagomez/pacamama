@@ -46,9 +46,20 @@
   </v-card>
 </template>
 <script>
-  export default {
-    data: () => ({
-      show: false,
-    }),
+export default {
+  data () {
+    return {
+      huertas: [],
+      error: null
+    }
+  },
+  async mounted () {
+    try {
+      this.huertas = await this.$strapi.$huertas.find()
+      console.log(this.huertas)
+    } catch (error) {
+      this.error = error
+    }
   }
+}
 </script>
