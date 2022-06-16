@@ -19,6 +19,7 @@
       </v-container>
     </v-main>
     <v-navigation-drawer
+    class="primary"
       v-model="rightDrawer"
       :right="right"
       temporary
