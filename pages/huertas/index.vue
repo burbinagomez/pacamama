@@ -9,7 +9,7 @@
     max-width="344"
   >
     <v-img
-      :src="`${$axios.defaults.baseURL}${huerta.media[0].url}`"
+      :src="`${huerta.media[0].url}`"
       height="200px"
     ></v-img>
 
