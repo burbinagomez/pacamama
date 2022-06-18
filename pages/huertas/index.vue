@@ -25,6 +25,7 @@
       <v-btn
         color="orange lighten-2"
         text
+        :to="`huertas/${huerta.id}`"
       >
         Explore
       </v-btn>
@@ -44,7 +45,6 @@ export default {
   async mounted () {
       await this.$axios.$get('/huertas').then(response => {
         this.huertas = response
-        console.log(response);
       })
   }
 }
