@@ -7,41 +7,12 @@
          fill-height>
             <v-layout align-center justify-center>
                <v-flex xs12 sm8 md4>
-                <v-btn
-                to="perfil/login">
-                    Iniciar Sesion
-                </v-btn>
-                <v-btn
-                to="perfil/signup"
-                >
-                    Registrar
-                </v-btn>
-               </v-flex>
-            </v-layout>
-         </v-container>
-
-         <!-- Sign Up -->
-         <v-container
-         v-else
-         >
-             <v-layout align-center justify-center>
-               <v-flex xs12 sm8 md4>
                   <v-card class="elevation-12">
                      <v-toolbar dark color="primary">
-                        <v-toolbar-title>Registrar</v-toolbar-title>
+                        <v-toolbar-title>Iniciar Sesion</v-toolbar-title>
                      </v-toolbar>
                      <v-card-text>
                      <v-form>
-
-                         <v-text-field
-                              v-model="username"
-                              name="email"
-                              label="Nombre"
-                              type="text"
-                              placeholder="Nombre"
-                              required
-                           ></v-text-field>
-
                             <v-text-field
                               v-model="email"
                               name="email"
@@ -63,7 +34,7 @@
                            type="button" 
                            class="mt-4" 
                            color="primary"  
-                           @click="registrar()">Registrar</v-btn>
+                           @click="login()">Iniciar Sesion</v-btn>
                       </v-form>
                      </v-card-text>
                   </v-card>
@@ -71,6 +42,7 @@
                </v-flex>
             </v-layout>
          </v-container>
+
       </v-main>
 </template>
 
@@ -90,18 +62,6 @@ export default {
             try{
                 await this.$auth.loginWith('local',{
                     data: {identifier: this.email, password: this.password},
-                })
-            }catch(e){
-                if(e.response) this.err = e.response.data.error.message
-            }
-        },
-        async registrar() {
-            try{
-                this.$axios.setToken(false)
-                await this.$axios.post('auth/local/register',{
-                    username: this.username,
-                    email: this.email,
-                    password: this.password,
                 })
             }catch(e){
                 if(e.response) this.err = e.response.data.error.message

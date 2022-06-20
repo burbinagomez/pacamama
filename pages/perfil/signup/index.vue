@@ -1,29 +1,7 @@
 <template>
   <v-main>
-      <!-- Login -->
-         <v-container 
-         v-if="!this.$auth.loggedIn"
-         fluid 
-         fill-height>
-            <v-layout align-center justify-center>
-               <v-flex xs12 sm8 md4>
-                <v-btn
-                to="perfil/login">
-                    Iniciar Sesion
-                </v-btn>
-                <v-btn
-                to="perfil/signup"
-                >
-                    Registrar
-                </v-btn>
-               </v-flex>
-            </v-layout>
-         </v-container>
-
          <!-- Sign Up -->
-         <v-container
-         v-else
-         >
+         <v-container>
              <v-layout align-center justify-center>
                <v-flex xs12 sm8 md4>
                   <v-card class="elevation-12">
@@ -86,15 +64,6 @@ export default {
         }
     },
     methods: {
-        async login() {
-            try{
-                await this.$auth.loginWith('local',{
-                    data: {identifier: this.email, password: this.password},
-                })
-            }catch(e){
-                if(e.response) this.err = e.response.data.error.message
-            }
-        },
         async registrar() {
             try{
                 this.$axios.setToken(false)
