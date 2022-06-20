@@ -47,11 +47,6 @@ export default {
     axios: {
         // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
         baseURL: 'https://mysterious-falls-23589.herokuapp.com',
-        headers: {
-            common: {
-                'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjU1NDI3Njg1LCJleHAiOjE2NTgwMTk2ODV9.JdrHJGPIekQyRgU388vmOMgULBzytvUMKTzw1YqFQrw'
-            }
-        }
     },
 
     // PWA module configuration: https://go.nuxtjs.dev/pwa

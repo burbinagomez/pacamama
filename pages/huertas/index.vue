@@ -27,7 +27,7 @@
         text
         :to="`huertas/${huerta.id}`"
       >
-        Explore
+        Ver Mas
       </v-btn>
     </v-card-actions>
   </v-card>
