@@ -1,4 +1,4 @@
-# front
+# halpes-nuxt
 
 ## Build Setup
 

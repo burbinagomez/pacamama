@@ -1,111 +1,110 @@
-import colors from 'vuetify/es5/util/colors'
-
+import { resolve } from "path";
 export default {
-    // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
-    ssr: false,
-
-    // Global page headers: https://go.nuxtjs.dev/config-head
-    head: {
-        titleTemplate: '%s - front',
-        title: 'front',
-        meta: [
-            { charset: 'utf-8' },
-            { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-            { hid: 'description', name: 'description', content: '' },
-            { name: 'format-detection', content: 'telephone=no' }
-        ],
-        link: [
-            { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-        ]
+  // Global page headers: https://go.nuxtjs.dev/config-head
+  head: {
+    title: "Halpes || Vue Nuxt Template For Donation Services",
+    htmlAttrs: {
+      lang: "en",
     },
-
-    // Global CSS: https://go.nuxtjs.dev/config-css
-    css: [],
-
-    // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-    plugins: [],
-
-    // Auto import components: https://go.nuxtjs.dev/config-components
-    components: true,
-
-    // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-    buildModules: [
-        // https://go.nuxtjs.dev/vuetify
-        '@nuxtjs/vuetify',
+    meta: [
+      {
+        charset: "utf-8",
+      },
+      {
+        name: "viewport",
+        content: "width=device-width, initial-scale=1",
+      },
+      {
+        hid: "description",
+        name: "description",
+        content: "",
+      },
+      {
+        name: "format-detection",
+        content: "telephone=no",
+      },
     ],
-
-    // Modules: https://go.nuxtjs.dev/config-modules
-    modules: [
-        // https://go.nuxtjs.dev/axios
-        '@nuxtjs/axios',
-        // https://go.nuxtjs.dev/pwa
-        '@nuxtjs/pwa',
-        '@nuxtjs/auth-next',
+    link: [
+      {
+        rel: "icon",
+        type: "image/x-icon",
+        href: "/favicon.ico",
+      },
+      {
+        rel: "stylesheet",
+        href: "//fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,700,700i,800,800i,900,900i",
+      },
+      {
+        rel: "stylesheet",
+        href: "//cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css",
+      },
+      {
+        rel: "stylesheet",
+        href: "//unpkg.com/accordion-js@3.1.1/dist/accordion.min.css",
+      },
     ],
+    script: [
+      {
+        src: "//cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js",
+        body: true,
+      },
+      {
+        src: "//unpkg.com/accordion-js@3.1.1/dist/accordion.min.js",
+        body: true,
+      },
+    ],
+    loading: {
+      color: "#15c8a0",
+      height: "4px",
+    },
+  },
 
-    // Axios module configuration: https://go.nuxtjs.dev/config-axios
-    axios: {
-        // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
-        baseURL: 'https://mysterious-falls-23589.herokuapp.com',
-    },
+  // Global CSS: https://go.nuxtjs.dev/config-css
+  css: [
+    "~/assets/vendors/animate/animate.min.css",
+    "bootstrap/dist/css/bootstrap.min.css",
+    "~/assets/vendors/fontawesome/css/all.min.css",
+    "~/assets/vendors/halpes-icons/style.css",
+    "~/assets/vendors/reey-font/stylesheet.css",
+    "~/assets/css/halpes.css",
+    "~/assets/css/halpes-responsive.css",
+  ],
 
-    // PWA module configuration: https://go.nuxtjs.dev/pwa
-    pwa: {
-        manifest: {
-            lang: 'en'
-        }
+  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
+  plugins: [
+    {
+      src: "~/plugins/vue-tiny-slider.js",
+      mode: "client",
     },
+    {
+      src: "~/plugins/jarallax.js",
+      mode: "client",
+    },
+    {
+      src: "@/plugins/vue-ellipse-progress.js",
+      mode: "client",
+    },
+  ],
 
-    // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
-    vuetify: {
-        customVariables: ['~/assets/variables.scss'],
-        theme: {
-            dark: false,
-            themes: {
-                dark: {
-                    primary: colors.blue.darken2,
-                    accent: colors.grey.darken3,
-                    secondary: colors.amber.darken3,
-                    info: colors.teal.lighten1,
-                    warning: colors.amber.base,
-                    error: colors.deepOrange.accent4,
-                    success: colors.green.accent3
-                },
-                light: {
-                    primary: "#ACF2AE",
-                    accent: colors.grey.darken3,
-                    secondary: "#F7BC03",
-                    info: colors.teal.lighten1,
-                    warning: colors.amber.base,
-                    error: colors.deepOrange.accent4,
-                    success: colors.green.accent3
-                }
-            }
-        }
-    },
-    // Build Configuration: https://go.nuxtjs.dev/config-build
-    build: {},
-    auth: {
-        strategies: {
-            local: {
-                token: {
-                    property: 'jwt',
-                },
-                user: {
-                    property: false,
-                },
-                endpoints: {
-                    login: {
-                        url: 'auth/local',
-                        method: 'post'
-                    },
-                    user: {
-                        url: 'users/me',
-                        method: 'get',
-                    },
-                    logout: false,
-                },
-            },
-        },
-    },
-}
+  // Auto import components: https://go.nuxtjs.dev/config-components
+  components: true,
+
+  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
+  buildModules: [],
+
+  // Modules: https://go.nuxtjs.dev/config-modules
+  modules: ['@nuxtjs/axios'],
+  alias: {
+    components: resolve(__dirname, "./components"),
+    images: resolve(__dirname, "./assets/images"),
+    css: resolve(__dirname, "./assets/css"),
+    vendors: resolve(__dirname, "./assets/vendors"),
+  },
+
+  // Build Configuration: https://go.nuxtjs.dev/config-build
+  build: {},
+  axios: {
+    // extra config e.g
+    BaseURL: 'https://admin.pacamama.com.co/'
+  }
+};

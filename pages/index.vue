@@ -1,14 +1,19 @@
 <template>
-  <Index />
+  <div>
+    <MainSliderOne />
+    <AboutTwo />
+    <CausesCarousel />
+    <CallToActionTwo className="" />
+    <ThreeBoxes />
+    <ContactHome />
+    <GalleryCarousel />
+    <TestimonialsCarouselOne className="" />
+    <VideoOne />
+    <NewsHome />
+    <SponsorsOne />
+  </div>
 </template>
 
 <script>
-import Index from "../components/Landing/Index.vue"
-
-export default {
-  components:{
-    Index
-  },
-  name: 'IndexPage'
-}
+export default {};
 </script>
