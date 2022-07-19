@@ -18,10 +18,10 @@
     <div class="causes-one__progress">
       <div class="causes-one__goals">
         <p>
-          <span>${{ amount.raised }}</span> Raised
+          <span>{{ amount.raised }}</span> Familias impactadas
         </p>
         <p>
-          <span>${{ amount.goal }}</span> Goal
+          <span>{{ amount.goal }}</span> Organicos Compostados
         </p>
       </div>
     </div>

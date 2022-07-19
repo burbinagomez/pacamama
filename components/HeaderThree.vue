@@ -60,17 +60,15 @@
             </div>
             <div class="main-menu__right main-menu__right-three">
               <div class="main-menu__right-social">
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-facebook-square"></i></a>
-                <a href="#"><i class="fab fa-dribbble"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/fundacionpacamama"><i class="fab fa-facebook-square"></i></a>
+              <a href="https://www.instagram.com/paca.mama/"><i class="fab fa-instagram"></i></a>
               </div>
               <a
                 href="#"
                 class="main-menu__search search-toggler icon-magnifying-glass"
                 @click="searchPopupStatusChange"
               ></a>
-              <a href="#" class="main-menu__cart icon-shopping-cart"></a>
+              <!-- <a href="#" class="main-menu__cart icon-shopping-cart"></a> -->
             </div>
           </div>
         </nav>
@@ -138,17 +136,15 @@
           </div>
           <div class="main-menu__right main-menu__right-three">
             <div class="main-menu__right-social">
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-facebook-square"></i></a>
-              <a href="#"><i class="fab fa-dribbble"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.facebook.com/fundacionpacamama"><i class="fab fa-facebook-square"></i></a>
+              <a href="https://www.instagram.com/paca.mama/"><i class="fab fa-instagram"></i></a>
             </div>
             <a
               href="#"
               class="main-menu__search search-toggler icon-magnifying-glass"
               @click="searchPopupStatusChange"
             ></a>
-            <a href="#" class="main-menu__cart icon-shopping-cart"></a>
+            <!-- <a href="#" class="main-menu__cart icon-shopping-cart"></a> -->
           </div>
         </div>
       </div>

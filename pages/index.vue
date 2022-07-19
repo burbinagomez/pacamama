@@ -1,19 +1,28 @@
 <template>
   <div>
-    <MainSliderOne />
-    <AboutTwo />
-    <CausesCarousel />
-    <CallToActionTwo className="" />
+    <MainSliderCounter />
+    <!-- <AboutTwo /> -->
+    <!-- <CausesCarousel :causes="huertas"/> -->
+    <!-- <CallToActionTwo className="" /> -->
     <ThreeBoxes />
-    <ContactHome />
+    <!-- <ContactHome /> -->
     <GalleryCarousel />
-    <TestimonialsCarouselOne className="" />
+    <!-- <TestimonialsCarouselOne className="" /> -->
     <VideoOne />
-    <NewsHome />
-    <SponsorsOne />
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+data (){
+    return {
+      huertas: []
+    }
+  },
+  async mounted(){
+    await this.$axios.$get('https://admin.pacamama.com.co/huertas').then(response=>{
+      this.huertas = response
+    })
+  }
+};
 </script>
