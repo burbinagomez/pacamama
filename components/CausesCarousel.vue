@@ -10,13 +10,14 @@
           <div class="causes-one__carousel">
             <client-only>
               <vue-tiny-slider v-bind="tinySliderOptions">
-                <div class="item" v-for="item in causes" :key="item.id">
+                <div class="item" v-for="item in causes" :key="item.index">
                   <CausesCard
-                    :title="item.nombre"
-                    :amount="{}"
-                    :thumbnail="item.media[0].url"
-                    :excerpt="item.descripcion"
-                    :url="`huertas/${item.id}`"
+                    :title="item.title"
+                    :amount="item.amount"
+                    :category="item.category"
+                    :thumbnail="item.thumbnail"
+                    :excerpt="item.excerpt"
+                    :url="item.url"
                   />
                 </div>
                 <!-- /.item -->
@@ -36,6 +37,7 @@
 <script>
 import SectionTitle from "~/components/SectionTitle";
 import CausesCard from "~/components/CausesCard";
+import data from "~/data/data.json";
 export default {
   components: {
     SectionTitle,
@@ -43,6 +45,7 @@ export default {
   },
   data() {
     return {
+      causes: data.causes,
       tinySliderOptions: {
         loop: true,
         items: 1,
@@ -77,11 +80,6 @@ export default {
         },
       },
     };
-  },
-  props:{
-    causes:{
-      type:Array
-    } 
   },
 };
 </script>

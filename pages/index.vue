@@ -1,11 +1,11 @@
 <template>
   <div>
-    <MainSliderCounter />
+    <MainSliderOne />
     <!-- <AboutTwo /> -->
     <!-- <CausesCarousel :causes="huertas"/> -->
     <!-- <CallToActionTwo className="" /> -->
     <ThreeBoxes />
-    <!-- <ContactHome /> -->
+    <ContactHome />
     <GalleryCarousel />
     <!-- <TestimonialsCarouselOne className="" /> -->
     <VideoOne />

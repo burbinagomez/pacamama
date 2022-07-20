@@ -6,7 +6,7 @@
           <div class="main-menu-three__container clearfix">
             <div class="main-menu-three__logo">
               <nuxt-link to="/">
-                <img :src="require(`~/assets/images${logo.dark}`)" alt="" />
+                <img :src="require(`~/assets/images${logo.dark}`)" alt="" width="120" height="120"/>
               </nuxt-link>
             </div>
             <div class="main-menu-three__inner-upper clearfix">
@@ -84,7 +84,9 @@
         <div class="main-menu-three__container clearfix">
           <div class="main-menu-three__logo">
             <nuxt-link to="/">
-              <img :src="require(`~/assets/images${logo.dark}`)" alt="" />
+              <img :src="require(`~/assets/images${logo.dark}`)" alt="" 
+              width="120" height="120"
+              />
             </nuxt-link>
           </div>
           <div class="main-menu-three__inner-upper clearfix">
