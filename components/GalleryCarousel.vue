@@ -7,9 +7,9 @@
           <vue-tiny-slider v-bind="tinySliderOptions">
             <div class="item" v-for="(item, index) in gallery" :key="index">
               <GalleryCard
-                :title="item.title"
-                :thumbnail="item.thumbnail"
-                :category="item.category"
+                :title="item.name"
+                :thumbnail="item.url"
+                category=""
               />
             </div>
           </vue-tiny-slider>
@@ -30,10 +30,12 @@ export default {
     className: {
       type: String,
     },
+    gallery: {
+      type: Array
+    }
   },
   data() {
     return {
-      gallery: data.gallery,
       tinySliderOptions: {
         loop: true,
         items: 1,

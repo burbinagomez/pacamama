@@ -1,11 +1,11 @@
 <template>
   <section class="main-slider">
     <swiper ref="mySwiper" :options="swiperOptions">
-      <swiper-slide v-for="item in sliderOne" :key="item.index">
+      <swiper-slide v-for="item in gallery" :key="item.index">
         <div
           class="image-layer"
           :style="`
-                background-image: url(${require(`~/assets/images${item.image}`)});
+                background-image: url(${item.url});
               `"
         ></div>
         <div class="image-layer-overlay"></div>
@@ -14,12 +14,12 @@
           <div class="row">
             <div class="col-lg-8">
               <div class="main-slider__content">
-                <p v-html="item.subtitle" />
-                <h2 v-html="item.title" />
-                <nuxt-link :to="item.buttonUrl" class="thm-btn">
+                <!-- <p v-html="item.subtitle" />
+                <h2 v-html="item.title" /> -->
+                <!-- <nuxt-link :to="item.buttonUrl" class="thm-btn">
                   <i class="fas fa-arrow-circle-right"></i>
                   {{ item.buttonLabel }}
-                </nuxt-link>
+                </nuxt-link> -->
                 <div class="main-slider__shape-1 zoom-fade">
                   <img src="~images/shapes/main-slider-1-shape-1.png" alt="" />
                 </div>
@@ -57,7 +57,6 @@ export default {
   },
   data() {
     return {
-      sliderOne: data.sliderOne,
       sliderOneCounter: data.sliderOneCounter,
       swiperOptions: {
         slidesPerView: 1,
@@ -78,5 +77,10 @@ export default {
       },
     };
   },
+  props:{
+    gallery:{
+      type: Array
+    }
+  }
 };
 </script>

@@ -17,10 +17,6 @@
               <div class="three-boxes__text-box">
                 <h2 v-html="feature.title" />
                 <p class="three-boxes__text" v-html="feature.text" />
-                <nuxt-link :to="feature.url" class="three-boxes__btn"
-                  ><i class="fa fa-heart"></i>
-                  {{ feature.buttonLabel }}
-                </nuxt-link>
               </div>
             </div>
           </div>

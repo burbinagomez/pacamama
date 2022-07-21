@@ -1,12 +1,12 @@
 <template>
   <div>
-    <MainSliderOne />
+    <MainSliderOne :gallery="gallery.slice(0,5)"/>
     <!-- <AboutTwo /> -->
     <!-- <CausesCarousel :causes="huertas"/> -->
     <!-- <CallToActionTwo className="" /> -->
     <ThreeBoxes />
     <ContactHome />
-    <GalleryCarousel />
+    <GalleryCarousel :gallery="gallery.slice(0,10)"/>
     <!-- <TestimonialsCarouselOne className="" /> -->
     <VideoOne />
   </div>
@@ -16,12 +16,12 @@
 export default {
 data (){
     return {
-      huertas: []
+      gallery: []
     }
   },
   async mounted(){
-    await this.$axios.$get('https://admin.pacamama.com.co/huertas').then(response=>{
-      this.huertas = response
+    await this.$axios.$get('https://admin.pacamama.com.co/upload/files').then(response=>{
+      this.gallery = response
     })
   }
 };
