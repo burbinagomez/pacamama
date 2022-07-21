@@ -5,7 +5,7 @@
     <!-- <CausesCarousel :causes="huertas"/> -->
     <!-- <CallToActionTwo className="" /> -->
     <ThreeBoxes />
-    <ContactHome />
+    <!-- <ContactHome /> -->
     <!-- <GalleryCarousel :gallery="gallery.slice(0,10)"/> -->
     <!-- <TestimonialsCarouselOne className="" /> -->
     <VideoOne />

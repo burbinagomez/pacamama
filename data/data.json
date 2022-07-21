@@ -504,22 +504,22 @@
         }
     ],
     "features": [{
-            "title": "Healthy Food",
-            "text": "Lorem ipsum is simply free text available amet,\n                                        consectetuer adipiscing elit. There are not many passages of ipsum.",
+            "title": "Alimentacion Sostenible",
+            "text": "\n                                        consectetuer adipiscing elit. There are not many passages of ipsum.",
             "icon": "icon-fast-food",
             "url": "/causes-details",
             "buttonLabel": "Donate"
         },
         {
-            "title": "Clean Water",
-            "text": "Lorem ipsum is simply free text available amet,\n                                        consectetuer adipiscing elit. There are not many passages of ipsum.",
+            "title": "Paca digestora silva",
+            "text": "Proceso de transformacion de desechos organicos en tierra reduciendo el impacto de la basura organica",
             "icon": "icon-water",
             "url": "/causes-details",
             "buttonLabel": "Donate"
         },
         {
-            "title": "Medical Treatment",
-            "text": "Lorem ipsum is simply free text available amet,\n                                        consectetuer adipiscing elit. There are not many passages of ipsum.",
+            "title": "Huertas",
+            "text": "Con la tierra producida por la paca digestora silva construimos espacios para produccion de alimentos",
             "icon": "icon-health-check",
             "url": "/causes-details",
             "buttonLabel": "Donate"
