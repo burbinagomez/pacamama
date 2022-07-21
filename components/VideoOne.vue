@@ -8,10 +8,10 @@
         data-speed="0.2"
         data-imgPosition="50% 0%"
       >
-        <img
+        <!-- <img
           src="~/assets/images/backgrounds/help-them-bg.jpg"
           class="jarallax-img"
-        />
+        /> -->
       </div>
     </client-only>
     <div class="container">
@@ -20,18 +20,18 @@
           <div class="col-xl-8 col-lg-8">
             <div class="help-them__top-content">
               <h2 class="help-them__top-content-title">
-                Help them whenever they are in need
+                Paca tus organicos
               </h2>
             </div>
           </div>
           <div class="col-xl-4 col-lg-4">
             <div class="help-them__top-video-box">
               <a
-                href="https://www.youtube.com/watch?v=i9E_Blai8vk"
+                href="https://www.youtube.com/watch?v=FMfo-aHgW_k"
                 class="help-them__top-video-btn video-popup"
                 ><i class="fa fa-play"></i
               ></a>
-              <p class="help-them__top-video-text">Watch the Video</p>
+              <p class="help-them__top-video-text">Mira el video</p>
             </div>
           </div>
         </div>
@@ -43,7 +43,7 @@
             v-for="(item, index) in videoFeatures"
             :key="index"
           >
-            <!--Help Them Single-->
+
             <div class="help-them__single">
               <div class="help-them__icon">
                 <span :class="item.icon"></span>

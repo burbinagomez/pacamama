@@ -8,7 +8,7 @@
           <div :class="`three-boxes__single three-boxes__single-item-${index}`">
             <div
               class="three-boxes__single-bg"
-              :style="`background-image: url(${require(`~/assets/images/resources/three-boxes-img-1.jpg`)})`"
+              :style="`background-image: url(${feature.image})`"
             ></div>
             <div class="three-boxes__content">
               <!-- <div class="three-boxes__icon">

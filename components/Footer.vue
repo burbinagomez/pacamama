@@ -10,14 +10,11 @@
           <div class="row">
             <div class="col-xl-3 col-lg-6 col-md-6">
               <div class="footer-widget__column footer-widget__about">
-                <h3 class="footer-widget__title">Nosotros</h3>
+                <!-- <h3 class="footer-widget__title">Nosotros</h3>
                 <p class="footer-widget__text">
                   Lorem ipsum dolor sit ame consect etur pisicing elit sed do
                   eiusmod tempor incididunt ut labore.
-                </p>
-                <a href="#" class="footer-widget__about-btn"
-                  ><i class="fa fa-heart"></i>Donate
-                </a>
+                </p> -->
               </div>
             </div>
           </div>

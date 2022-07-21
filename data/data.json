@@ -505,9 +505,10 @@
     ],
     "features": [{
             "title": "Alimentacion Sostenible",
-            "text": "\n                                        consectetuer adipiscing elit. There are not many passages of ipsum.",
+            "text": "Aprende sobre lo que consumes y como este afecta tu cuerpo",
             "icon": "icon-fast-food",
             "url": "/causes-details",
+            "image": "https://res.cloudinary.com/dbxtvymdq/image/upload/v1655485297/IMG_5502_9b79be6275.jpg?6572504.600000001",
             "buttonLabel": "Donate"
         },
         {
@@ -515,6 +516,7 @@
             "text": "Proceso de transformacion de desechos organicos en tierra reduciendo el impacto de la basura organica",
             "icon": "icon-water",
             "url": "/causes-details",
+            "image": "https://res.cloudinary.com/dbxtvymdq/image/upload/v1655486519/IMG_6267_d5201f54e0.jpg?6530195.100000001",
             "buttonLabel": "Donate"
         },
         {
@@ -522,6 +524,7 @@
             "text": "Con la tierra producida por la paca digestora silva construimos espacios para produccion de alimentos",
             "icon": "icon-health-check",
             "url": "/causes-details",
+            "image": "https://res.cloudinary.com/dbxtvymdq/image/upload/v1655486466/IMG_6277_8ea120b097.jpg?6509724.4",
             "buttonLabel": "Donate"
         }
     ],
@@ -542,19 +545,19 @@
         }
     ],
     "videoFeatures": [{
-            "title": "Become a Volunteer",
-            "text": "There are many variations of but the majority have simply free text suffered.",
-            "icon": "icon-charity"
+            "title": "Participa",
+            "text": "",
+            "icon": ""
         },
         {
-            "title": "Quick Fundraising",
-            "text": "There are many variations of but the majority have simply free text suffered.",
-            "icon": "icon-generous"
+            "title": "Aprende",
+            "text": "",
+            "icon": ""
         },
         {
-            "title": "Start Donating",
-            "text": "There are many variations of but the majority have simply free text suffered.",
-            "icon": "icon-fundraiser"
+            "title": "Transforma",
+            "text": "",
+            "icon": ""
         }
     ],
     "galleryTwo": [{
