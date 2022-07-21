@@ -11,9 +11,9 @@
               :style="`background-image: url(${require(`~/assets/images/resources/three-boxes-img-1.jpg`)})`"
             ></div>
             <div class="three-boxes__content">
-              <div class="three-boxes__icon">
+              <!-- <div class="three-boxes__icon">
                 <span :class="feature.icon"></span>
-              </div>
+              </div> -->
               <div class="three-boxes__text-box">
                 <h2 v-html="feature.title" />
                 <p class="three-boxes__text" v-html="feature.text" />

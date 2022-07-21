@@ -6,7 +6,7 @@
     <!-- <CallToActionTwo className="" /> -->
     <ThreeBoxes />
     <ContactHome />
-    <GalleryCarousel :gallery="gallery.slice(0,10)"/>
+    <!-- <GalleryCarousel :gallery="gallery.slice(0,10)"/> -->
     <!-- <TestimonialsCarouselOne className="" /> -->
     <VideoOne />
   </div>
