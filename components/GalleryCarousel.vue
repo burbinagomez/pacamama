@@ -7,7 +7,7 @@
           <vue-tiny-slider v-bind="tinySliderOptions">
             <div class="item" v-for="(item, index) in gallery" :key="index">
               <GalleryCard
-                :title="item.name"
+                title=""
                 :thumbnail="item.url"
                 category=""
               />
