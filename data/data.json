@@ -1,8 +1,8 @@
 {
     "logo": {
         "dark": "/resources/logo-3.png",
-        "light": "/resources/logo-1.png",
-        "lightColored": "/resources/logo-2.png"
+        "light": "/resources/logo-3.png",
+        "lightColored": "/resources/logo-3.png"
     },
     "navMenus": [{
             "name": "Inicio",

@@ -64,7 +64,7 @@
       </div>
       <!-- /.mobile-nav__container -->
 
-      <ul class="mobile-nav__contact list-unstyled">
+      <!-- <ul class="mobile-nav__contact list-unstyled">
         <li>
           <i class="fa fa-envelope"></i>
           <a href="mailto:needhelp@packageName__.com">needhelp@halpes.com</a>
@@ -73,14 +73,14 @@
           <i class="fa fa-phone-alt"></i>
           <a href="tel:666-888-0000">666 888 0000</a>
         </li>
-      </ul>
+      </ul> -->
       <!-- /.mobile-nav__contact -->
       <div class="mobile-nav__top">
         <div class="mobile-nav__social">
-          <a href="#" class="fab fa-twitter"></a>
-          <a href="#" class="fab fa-facebook-square"></a>
-          <a href="#" class="fab fa-pinterest-p"></a>
-          <a href="#" class="fab fa-instagram"></a>
+          <a href="https://twitter.com/Pacamama4" class="fab fa-twitter"></a>
+          <a href="https://www.facebook.com/fundacionpacamama" class="fab fa-facebook-square"></a>
+          <a href="https://www.youtube.com/channel/UCJhWUmklm4Y0v6nxPzHwNWQ" class="fab fa-youtube"></a>
+          <a href="https://www.instagram.com/paca.mama/" class="fab fa-instagram"></a>
         </div>
         <!-- /.mobile-nav__social -->
       </div>

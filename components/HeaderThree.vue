@@ -60,8 +60,10 @@
             </div>
             <div class="main-menu__right main-menu__right-three">
               <div class="main-menu__right-social">
-                <a href="https://www.facebook.com/fundacionpacamama"><i class="fab fa-facebook-square"></i></a>
-              <a href="https://www.instagram.com/paca.mama/"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/Pacamama4" class="fab fa-twitter"></a>
+          <a href="https://www.facebook.com/fundacionpacamama" class="fab fa-facebook-square"></a>
+          <a href="https://www.youtube.com/channel/UCJhWUmklm4Y0v6nxPzHwNWQ" class="fab fa-youtube"></a>
+          <a href="https://www.instagram.com/paca.mama/" class="fab fa-instagram"></a>
               </div>
               <a
                 href="#"
@@ -138,8 +140,10 @@
           </div>
           <div class="main-menu__right main-menu__right-three">
             <div class="main-menu__right-social">
-              <a href="https://www.facebook.com/fundacionpacamama"><i class="fab fa-facebook-square"></i></a>
-              <a href="https://www.instagram.com/paca.mama/"><i class="fab fa-instagram"></i></a>
+              <a href="https://twitter.com/Pacamama4" class="fab fa-twitter"></a>
+          <a href="https://www.facebook.com/fundacionpacamama" class="fab fa-facebook-square"></a>
+          <a href="https://www.youtube.com/channel/UCJhWUmklm4Y0v6nxPzHwNWQ" class="fab fa-youtube"></a>
+          <a href="https://www.instagram.com/paca.mama/" class="fab fa-instagram"></a>
             </div>
             <a
               href="#"
