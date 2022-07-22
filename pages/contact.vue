@@ -1,8 +1,8 @@
 <template>
   <div>
-    <PageHeader pageTitle="Contact Us" pageName="Contact" />
+    <PageHeader pageTitle="Contacto" pageName="Contact" />
     <ContactPageForm />
     <GoogleMap />
-    <CallToActionOne />
+    <!-- <CallToActionOne /> -->
   </div>
 </template>
