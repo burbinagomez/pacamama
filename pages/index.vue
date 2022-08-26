@@ -4,10 +4,11 @@
     <!-- <AboutTwo /> -->
     <!-- <CausesCarousel :causes="huertas"/> -->
     <!-- <CallToActionTwo className="" /> -->
-    <ThreeBoxes :gallery="gallery.slice(0,2)"/>
+    <!-- <ThreeBoxes :gallery="gallery.slice(0,2)"/> -->
     <!-- <ContactHome /> -->
     <!-- <GalleryCarousel :gallery="gallery.slice(0,10)"/> -->
     <!-- <TestimonialsCarouselOne className="" /> -->
+    <GoogleMap />
     <VideoOne />
   </div>
 </template>
