@@ -8,10 +8,10 @@
           :key="item.id"
         >
           <CausesCard
-            :title="item['attributes'].nombre"
+            :title="item.attributes.nombre"
             :amount="{}"
-            :thumbnail="item['attributes'].media[0].url"
-            :excerpt="item['attributes'].descripcion"
+            :thumbnail="item.attributes.media[0].url"
+            :excerpt="item.attributes.descripcion"
             :url="`huertas/${item.id}`"
           />
         </div>
