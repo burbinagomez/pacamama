@@ -5,13 +5,13 @@
         <div
           class="col-xl-4 col-lg-6 col-md-6"
           v-for="item in causes"
-          :key="item.index"
+          :key="item.id"
         >
           <CausesCard
-            :title="item.nombre"
+            :title="item['attributes'].nombre"
             :amount="{}"
-            :thumbnail="item.media[0].url"
-            :excerpt="item.descripcion"
+            :thumbnail="item['attributes'].media[0].url"
+            :excerpt="item['attributes'].descripcion"
             :url="`huertas/${item.id}`"
           />
         </div>
