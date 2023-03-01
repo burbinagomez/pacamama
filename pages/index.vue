@@ -21,7 +21,7 @@ data (){
     }
   },
   async mounted(){
-    await this.$axios.$get('upload/files').then(response=>{
+    await this.$axios.$get('https://admin.pacamama.com.co/upload/files').then(response=>{
       this.gallery = response
     })
   }
