@@ -92,13 +92,7 @@
             </nuxt-link>
           </div>
           <div class="main-menu-three__inner-upper clearfix">
-            <div class="main-menu-three__btn">
-              <nuxt-link
-                to="/causes-details"
-                class="main-menu-three__donate-btn"
-                ><i class="fa fa-heart"></i>Donate
-              </nuxt-link>
-            </div>
+            
             <div class="main-menu-three__inner clearfix">
               <a
                 href="#"
