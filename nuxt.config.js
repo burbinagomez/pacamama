@@ -101,6 +101,6 @@ export default {
     build: {},
     axios: {
         // extra config e.g
-        BaseURL: 'https://admin.pacamama.com.co/'
+        BaseURL: 'https://admin.pacamama.com.co/api/'
     }
 };
