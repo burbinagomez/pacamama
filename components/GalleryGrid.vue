@@ -9,7 +9,7 @@
         >
           <GalleryCard
             :title="item.id"
-            :thumbnail="item.url"
+            :thumbnail="item.attributes.url"
           />
         </div>
       </div>

@@ -14,8 +14,9 @@ export default {
     }
   },
   async mounted(){
-    await this.$axios.$get('https://admin.pacamama.com.co/huertas/'+ this.$route.params.id).then(response=>{
-      this.huerta = response
+    await this.$axios.$get('https://admin.pacamama.com.co/api/huertas/'+ this.$route.params.id + '?populate=media').then(response=>{
+      console.log(response)
+      this.huerta = response.data.attributes
     })
   }
 

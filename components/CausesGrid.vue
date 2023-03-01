@@ -10,7 +10,7 @@
           <CausesCard
             :title="item.attributes.nombre"
             :amount="{}"
-            :thumbnail="item.attributes.media[0].url"
+            :thumbnail="item.attributes.media.data[0].attributes.url"
             :excerpt="item.attributes.descripcion"
             :url="`huertas/${item.id}`"
           />
